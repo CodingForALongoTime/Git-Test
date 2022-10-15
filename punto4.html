@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Styles/normalize.css">
+    <link rel="stylesheet" href="Styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Redes del Computador</title>
+</head>
+
+<body>
+
+    <div class="cabecera">
+        <div class="headerContainer headerContainerVar">
+            <nav class="navElement">
+                <a href="#preguntas" class="navButton navElement">Preguntas</a>
+                <a href="#sobreMi" class="navButton navElement">Sobre Mi</a>
+            </nav>
+            <a href="index.html" class="logo navElement"> <img src="img/logo.png" alt="logo"></a>
+            <nav class="navElement">
+                <a href="https://telegra.ph/Links-Relacionados-07-23" target="_blank" class="navButton navElement">&#8689; Links</a>
+                <a href="https://unermb.web.ve/" target="_blank" class="navButton navElement">&#8689; UNERMB</a>
+            </nav>
+        </div>
+    </div>
+
+    <header class="cabeceraPuntos">
+        <div class="banner4"></div>
+        <h1 class="container hColor4">Topologías de redes</h1>
+    </header>
+
+    
+
+    <main class="contenidoPuntos container">
+        <h2>Definición</h2>
+        <p>La topología de red se define como una familia de comunicación usada por los computadores que conforman una red para intercambiar datos.</p>
+        <p>El concepto de red puede definirse como "conjunto de nodos interconectados" en informática, un nodo es un punto de intersección o unión de varios elementos que confluyen en el mismo lugar. Por ejemplo: en una red de ordenadores cada una de las máquinas es un nodo, y si la red es Internet, cada servidor constituye también un nodo. Un nodo es el punto en el que una curva se intercepta a sí misma.</p>
+
+        <hr>
+
+        <h2>Topologias</h2>
+        <h3>Punto a punto</h3>
+        <p>
+            La topología más sencilla es un enlace permanente entre dos puntos finales conocida como punto a punto (PtP). La topología punto a punto conmutada es la pasarela básica de la telefonía convencional. El valor de una red permanente de PtP es la comunicación sin obstáculos entre los dos puntos finales. El valor de una conexión PtP a demanda es proporcional al número de pares posibles de abonados y se ha expresado como la ley de Metcalfe.
+        </p>
+
+        <h4>Ventajas</h4>
+        <ul>
+            <li>Fáciles de configurar.</li>
+            <li>Menor complejidad.</li>
+            <li>Menor costo dado que no se necesita dispositivos de red ni servidores dedicados.</li>
+        </ul>
+
+        <h4>Desventajas</h4>
+        <ul>
+            <li>Administración no centralizada.</li>
+            <li>No son muy seguras.</li>
+            <li>Todos los dispositivos pueden actuar como cliente y como servidor, lo que puede ralentizar su funcionamiento.</li>
+            <li>No son escalables.</li>
+            <li>Reducen su rendimiento.</li>
+        </ul>
+
+
+        <h2>En bus</h2>
+        <p>De las distintas variaciones de la topología, es la más fácil de entender, y consiste en un canal de comunicaciones PtP para que el usuario pueda estar permanentemente asociado con los dos puntos finales. Un teléfono infantil de lata es un ejemplo de canal dedicado físico.</p>
+        <p>En muchos sistemas de telecomunicaciones conmutadas, es posible establecer un circuito permanente. Un ejemplo podría ser un teléfono en el vestíbulo de un edificio público, el cual está programado para que llame solo al número de teléfono destino. "Clavar" una conexión conmutada ahorra el costo de funcionamiento de un circuito físico entre los dos puntos. Los recursos en este tipo de conexión puede liberarse cuando ya no son necesarios, por ejemplo, un circuito de televisión cuando regresa al estudio tras haber sido utilizado para cubrir un desfile.</p>
+
+        <h3>Ventajas</h3>
+        <ul>
+            <li>Facilidad de implementación y crecimiento.</li>
+            <li>Fácil adaptación.</li>
+            <li>Simplicidad en la arquitectura.</li>
+            <li>Es una red que no ocupa mucho espacio.</li>
+        </ul>
+        <h3>Desventajas</h3>
+        <ul>
+            <li>Hay un límite de equipos dependiendo de la calidad de la señal.</li>
+            <li>Puede producirse degradación de la señal.</li>
+            <li>Complejidad de reconfiguración y aislamiento de fallos.</li>
+            <li>Limitación de las longitudes físicas del canal.</li>
+            <li>Un problema en el canal usualmente degrada toda la red</li>
+        </ul>
+
+
+        <h2>Red en estrella</h2>
+        <p>
+            La topología en estrella reduce la posibilidad de fallo de red conectando todos los nodos a un nodo central. Cuando se aplica a una red basada en la topología estrella este concentrador central reenvía todas las transmisiones recibidas de cualquier nodo periférico a todos los nodos periféricos de la red, algunas veces incluso al nodo que lo envió. Todos los nodos periféricos se pueden comunicar con los demás transmitiendo o recibiendo del nodo central solamente. Un fallo en la línea de conexión de cualquier nodo con el nodo central provocaría el aislamiento de ese nodo respecto a los demás, pero el resto de sistemas permanecería intacto. El tipo de concentrador (hub) se utiliza en esta topología, aunque es muy obsoleto; se suele usar comúnmente un switch.
+        </p>
+
+        <h3>Ventajas</h3>
+        <ul>
+            <li>Posee un sistema que permite agregar nuevos equipos fácilmente.</li>
+            <li>Reconfiguración rápida de cada daño.</li>
+            <li>Fácil de prevenir daños y/o conflictos, ya que no afecta a los demás equipos si ocurre algún fallo.</li>
+            <li>Centralización de la red.</li>
+            <li>Fácil de encontrar fallas de cada uno de ellos</li>
+        </ul>
+        <h3>Desventajas</h3>
+        <ul>
+            <li>Si el hub (repetidor) o switch central falla, toda la red deja de transmitir.</li>
+            <li>Es costosa, ya que requiere más cables que otras topologías.</li>
+            <li>El cable viaja por separado del concentrador a cada computadora.</li>
+        </ul>
+
+
+        <h2>Red en árbol</h2>
+        <p>Una topología en árbol, también conocida como topología jerárquica, puede ser vista como una colección de redes en estrella ordenadas en una jerarquía. Este árbol tiene nodos periféricos individuales. Por ejemplo, hojas, que requieren "transmitir a" y "recibir de" otro nodo solamente y no necesitan actuar como repetidores o regeneradores. Al contrario que en las redes en estrella, la función del nodo central se puede distribuir.</p>
+
+        <h3>Ventajas</h3>
+        <ul>
+            <li>Se permite conectar más dispositivos gracias a la inclusión de concentradores secundarios. </li>
+            <li>Permite priorizar y aislar las comunicaciones de distintas computadoras.</li>
+            <li>Cableado punto a punto para segmentos individuales. </li>
+            <li>Soportado por multitud de vendedores de software y de hardware </li>
+        </ul>
+        <h3>Desventajas</h3>
+        <ul>
+            <li>Se requiere mucho cable.</li>
+            <li>Es poco fiable para las empresas distribuidas.</li>
+            <li>La medida de cada segmento viene determinada por el tipo de cable utilizado.</li>
+            <li>Si se cae el segmento principal todo el segmento también cae.</li>
+            <li>Es más difícil su configuración.</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&#9993; joseg200217@gmail.com</p>
+    </footer>
+</body>
+</html>

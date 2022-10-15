@@ -1,0 +1,347 @@
+html{
+    box-sizing: border-box; /**Hace que las cajas respeten el tamaño que se les asigne**/
+    font-size: 62.5%; /**Establece que 1rem = 10px**/
+}
+*,*::after,*::before{
+    box-sizing: inherit; /** Hace que todas las cajas tengan el box-sizing especificado en la linea 2 **/
+}
+
+/*--- GENERALES ---*/
+h1{
+    font-size: 7rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3rem;
+}
+
+img{
+    box-sizing: border-box;
+}
+
+/*--- UTILIDADES ---*/
+.container{
+    margin: 0 auto;
+
+    width: 95%;
+    max-width: 120rem;
+}
+
+.hColor1{
+    background: linear-gradient(128deg, #edb513, #dce5ee 99%);
+    color: #ffffff00;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.hColor2{
+    background: linear-gradient(128deg, #d12c20, #ed1366 99%);
+    color: #ffffff00;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.hColor3{
+    background: linear-gradient(128deg, #c41c5c, #ba13ed 99%);
+    color: #ffffff00;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.hColor4{
+    background: linear-gradient(128deg, #a21dca, #1334ed 99%);
+    color: #ffffff00;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.hColor5{
+    background: linear-gradient(128deg, #1f36bb, #13deed 99%);
+    color: #ffffff00;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.hColor6{
+    background: linear-gradient(128deg, #1cb4be, #13ed5c 99%);
+    color: #ffffff00;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.hColor7{
+    background: linear-gradient(128deg, #1db34f, #7dca49 99%);
+    color: #ffffff00;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+/*--- DOCUMENTO ---*/
+body{
+    font-family: 'PT Sans', sans-serif;
+    color:#dce5ee;
+    background-color: #16171b;
+}
+
+
+/*-- Cabecera --*/
+.headerContainer{
+    width: 100%;
+    padding: 2rem;
+
+    position: absolute;
+    background: linear-gradient(#16171be3 75%,#16171b8e);
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.headerContainerVar{
+    justify-content: space-around !important;
+    width: 100%;
+}
+
+.logo img{
+    width: 6rem;
+}
+
+.navElement{
+    margin: 0 1rem;
+}
+
+.navButton{
+    padding: 0.7rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color:#dce5ee;
+
+    
+    text-decoration: none;
+
+    border: 2px solid #dce5ee;
+    border-radius: 1rem;
+}
+
+
+
+/*-- Hero --*/
+.hero{
+    height: 90vh;
+    min-height: 50rem;
+
+    padding: 4rem 0;
+
+    background: linear-gradient(rgba(59, 63, 100, 0.8),rgba(45, 50, 117, 0.5)), url('../img/hero.jpg') fixed;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+}
+
+.heroDescription{
+    font-size: 1.5rem;
+    width: 60%;
+    padding-top: 2rem;
+    border-top: 1px solid #dce5ee;
+}
+
+
+
+/*-- Contenido principal --*/
+.mainContent .art1{
+    margin: 4rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainContent .art2{
+    margin: 4rem 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.articleImage{
+    height: 30rem;
+    width: 49%;
+    border-radius: 1rem;
+}
+
+/*
+    background: linear-gradient(rgba(59, 63, 100, 0.8),rgba(45, 50, 117, 0.5)), url('../img/hero.jpg') fixed;
+    background-blend-mode: multiply;
+*/
+
+.articleImage1{
+    background: linear-gradient(rgba(99, 100, 59, 0.568),rgba(190, 199, 139, 0.103)), url(../img/articleImage1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.articleImage2{
+    background: linear-gradient(rgba(100, 59, 59, 0.568),rgba(190, 199, 139, 0.103)), url(../img/articleImage2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.articleImage3{
+    background: linear-gradient(rgba(110, 55, 67, 0.568),rgba(190, 199, 139, 0.103)), url(../img/articleImage3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.articleImage4{
+    background: linear-gradient(rgba(93, 55, 110, 0.568),rgba(199, 139, 139, 0.103)), url(../img/articleImage4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.articleImage5{
+    background: linear-gradient(rgba(89, 91, 180, 0.568),rgba(199, 139, 139, 0.103)), url(../img/articleImage5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.articleImage6{
+    background: linear-gradient(rgba(55, 110, 93, 0.568),rgba(199, 139, 139, 0.103)), url(../img/articleImage6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.articleImage7{
+    background: linear-gradient(rgba(123, 168, 105, 0.568),rgba(199, 139, 139, 0.103)), url(../img/articleImage7.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.articleDescription{
+    color: #dce5ee;
+    text-decoration: none;
+    height: 30rem;
+    width: 49%;
+    padding: 3rem;
+    background-color: #24262c;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.articleDescription h2{
+    text-transform: capitalize;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.articleDescription p{
+    font-size: 2rem;
+}
+
+
+/*-- Sobre Mi --*/
+#sobreMi{
+    background-color: #24262c;
+    border-radius: 1rem;
+    padding: 3rem 7rem;
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 850px) {
+    flex-wrap: wrap;
+}
+
+#sobreMi img{
+    width: 30%;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+#sobreMi div{
+    font: 300 2rem 'Inter', sans-serif;
+}
+
+.datos{
+    text-align: center;
+    line-height: 2;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.datos p{
+    background-color: #393c47;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-right: 1rem;
+}
+
+.datos p span{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/*-- Pie de pagina --*/
+footer{
+    margin-top: 10rem;
+    padding: 0 1rem;
+    font-size: 1.3rem;
+    text-align: right;
+}
+
+
+
+/*-- Inner Pages --*/
+.banner1{
+    height: 20rem;
+    width: 100%;
+    background-image: url(../img/articleImage1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.banner2{
+    height: 20rem;
+    width: 100%;
+    background-image: url(../img/articleImage2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.banner3{
+    height: 20rem;
+    width: 100%;
+    background-image: url(../img/articleImage3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.banner4{
+    height: 20rem;
+    width: 100%;
+    background-image: url(../img/articleImage4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.banner5{
+    height: 20rem;
+    width: 100%;
+    background-image: url(../img/articleImage5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.banner6{
+    height: 20rem;
+    width: 100%;
+    background-image: url(../img/articleImage6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.banner7{
+    height: 20rem;
+    width: 100%;
+    background-image: url(../img/articleImage7.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.cabeceraPuntos h1{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.contenidoPuntos{
+    margin-top: 20rem;
+    font-size: 2rem;
+}
